@@ -1,0 +1,149 @@
+<!--Made By LEE_MOD-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/Blog.css"/>
+    <!--导入myfocus-->
+    <script src="js/myfocus-2.0.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mF_fancy.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/mF_fancy.css"/>
+    <title>My Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <script type="text/javascript">
+			myFocus.set({
+				id:"lunbo"
+			})
+			
+//	检测是否为IE和移动设备
+		function isIE() { //ie?
+ 		if (!!window.ActiveXObject || "ActiveXObject" in window)
+  	return true;
+  	else
+  	return false;
+ 	}
+//	验证布偶值	
+		function notIE () {
+			if (isIE()==true) {
+					var r = confirm("此网页与IE各版本都有显示兼容问题，请换Chromium内核浏览器")
+				if (r==true) {
+					window.location.href='http://www.chromeliulanqi.com/';
+				} else{
+					alert("和IE的兼容没搞好 谅解")
+				}
+			} else if (navigator.userAgent.indexOf('Firefox') >= 0){
+					alert("火狐头部居中有点偏移 更好效果请用Chromium内核浏览器")
+			}
+				else if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)){
+					alert("非响应式网页 不兼容移动设备 请在PC端查看")
+				}
+				else{
+					return true;
+			}
+		}
+//	贼特么难写
+		window.onload(notIE());
+		
+		</script>
+  </head>
+  <body>
+  	<div class="boxContainer">
+  	<!--头部-->
+      <header class="pghead">
+      		<nav class="lfhead">
+      			<ul>
+      				<li>
+      					<span><a href="">BLOG</a></span>
+      				</li>
+      				<li>
+      					<span><a href="http://weibo.com/2875479064/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank">WEIBO</a></span>
+      				</li>
+      				<li>
+      					<span><a href="https://twitter.com/Lee_Mod520" target="_blank">TWITTER</a></span>
+      				</li>
+      			</ul>
+      		</nav>
+      		<div class="logos">
+      			<img src="img/logos.png" height="90px" width="130px"/>
+      		</div>
+      		<nav class="rihead">
+      			<ul>
+      				<li>
+      					<span><a href="http://www.toutiao.com/m51664757836/" target="_blank">TOUTIAO</a></span> 
+      				</li>
+      				<li>
+      					<span><a href="https://www.facebook.com/mod.lee.9461?ref=bookmarks" target="_blank">FACEBOOK</a></span>
+      				</li>
+      				<li>
+      					<span><a href="https://github.com/Lee-Mod" target="_blank">GITHUB</a></span>
+      				</li>
+      			</ul>
+      		</nav>
+      	</header>
+      <hr size="1" class="hr1"/>
+      <br />
+      <hr size="1" class="hr1"/>
+    <!--中间图片展示-->
+    	<div class="pgcenter">
+    		<div class="lunbo" id="lunbo">
+    			<div class="loading">
+    				<img src="img/loading.gif"/>
+    			</div>
+    			<div class="pic">
+    					<ul>
+					<li>
+						<a href="#"><img src="img/1a.jpg" width="700px" height="350px"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/2a.jpg" width="700px" height="350px"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/3a.jpg" width="700px" height="350px"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/4a.jpg" width="700px" height="350px"/></a>
+					</li>
+				</ul>
+    			</div>
+    		</div>
+    		<aside class="teach">
+    			<h3>UI视觉传达的魅力</h3>
+    			<p>时下移动开放平台众多，苹果、谷歌、微软、诺基亚都有自己的移动开发平台，想让自己的产品在众多的开放平台中留住用户，只靠品牌是不够的，产品用户体验比品牌更重要。我们可以充分的利用移动设备的特性，运用视觉传达的表现方式，去创造具有优秀的用户体验的app应用软件。</p>
+    			<p>智能手机意味着会有许许多多的app应用软件，大屏幕高分辨率触摸屏意味着可以展现色彩丰富、漂亮华丽的视觉界面。这个时代赋予了视觉传达设计领域新的机遇和广阔的应用设计空间。视觉传达的应用环境不仅仅是平面、网站、广告、企业VI设计这类传统的媒介，还涵盖软件的产品视觉传达设计。</p>
+    			<a href="../Blog/news/UI.html"><p>>> 阅读更多</p></a>
+    		</aside>
+    	</div>
+    	<hr size="1" class="hr2"/>
+    <!--博客内容-->
+    	<article class="pgcontain">
+ 				<section id="pg1">
+ 					<h3>Material Design设计风格</h3>
+ 					<a href="http://www.toutiao.com/i6343051443234144769/" target="_blank"><img src="img/android.gif" height="200px" width="260px"/>
+ 					<p>Material Design，中文名：质感设计，是由Google推出了全新的设计语言，是在安卓L下全新引入的设计风格语言。成了新时代APP设计的UI标准。国内外的APP无一不例外的向着MD风格靠近。</p></a>
+ 				</section>
+ 				<section id="pg2">
+ 					<h3>“零成本”建立个人网站</h3>
+ 					<a href="http://www.toutiao.com/i6343398667843535361/" target="_blank"><img src="img/mdweb.jpg" height="200px" width="260px"/>
+ 					<p>做出了好的设计就需要一个搭载展示的平台。现在最流行的莫过于H5了。HTML5比上一代的HTML4.1改进了不止一点点，各种新的标记和新的语法大幅提升的网页制作的效率。</p></a>
+ 				</section>
+ 				<section id="pg3">
+ 					<h3>论UI设计的重要性</h3>
+ 					<a href=""><img src="img/UIpic.jpg" height="200px" width="260px"/>
+ 					<p>在漫长的软件发展中，界面设计工作一直没有被重视起来。其实软件界面设计就像工业产品中的工业造型设计一样，是产品的重要卖点。一个友好美观的界面会给人带来舒适的视觉享受，拉近人与电脑的距离，为商家创造卖点。</p></a>
+ 				</section>
+ 				<section id="pg4">
+ 					<h3>安卓7.1更新前瞻</h3>
+ 					<a href=""><img src="img/MDUI.gif" height="200px" width="260px"/>
+ 					<p>谷歌系应用在最近的更新中拥有一个共同点，那就是应用图标基本都改为了圆形，开发者在代码中发现了roundIcon（圆形图标）的字样，因此安卓7.1很有可能在应用图标上有这方面的改动。</p></a>
+ 				</section>
+    	</article>
+    <!--底部-->
+    	<footer class="pgfoot">
+    		<hr size="1" class="hr3"/>
+    		<p id="foot">Copyright &copy; LEE MOD 2016</p>
+    	</footer>
+    </div>
+    </body>
+</html>
